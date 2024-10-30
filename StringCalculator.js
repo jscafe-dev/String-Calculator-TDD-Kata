@@ -2,15 +2,19 @@ class StringCalculator {
   add(numbers) {
     if (numbers === "") return 0;
 
-    const delimiter = /,|\n/;
-    const numberArray = numbers.split(delimiter).map(Number);
+    let delimiter = /,|\n/;
+    let numberString = numbers;
 
-    const negatives = numberArray.filter((num) => num < 0);
-    if (negatives.length > 0) {
-      throw new Error(`Negatives not allowed: ${negatives.join(", ")}`);
+    if (numbers.startsWith("//")) {
+      const delimiterEnd = numbers.indexOf("\n");
+      delimiter = new RegExp(numbers.substring(2, delimiterEnd));
+      numberString = numbers.substring(delimiterEnd + 1);
     }
 
-    return numberArray.reduce((sum, num) => sum + num, 0);
+    return numberString
+      .split(delimiter)
+      .map(Number)
+      .reduce((sum, num) => sum + num, 0);
   }
 }
 
