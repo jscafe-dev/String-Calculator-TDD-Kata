@@ -22,4 +22,8 @@ describe("StringCalculator", () => {
   test("should handle newlines as delimiters", () => {
     expect(calculator.add("1\n2,3")).toBe(6);
   });
+
+  test("should throw an error for negative numbers", () => {
+    expect(() => calculator.add("1,-2,3")).toThrow("Negatives not allowed: -2");
+  });
 });
