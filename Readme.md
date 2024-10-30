@@ -11,18 +11,16 @@ The String Calculator supports the following functionalities:
 - Supports newline characters as delimiters.
 - Allows custom delimiters in the format `//[delimiter]\n[numbers]`.
 - Throws an error when encountering negative numbers, listing all negative values.
-- Ignores numbers greater than 1000.
 
 Each feature was implemented incrementally following the TDD approach, with changes documented in the commit history.
 
 ## Installation
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/yourusername/string-calculator-tdd-kata.git
    ```
-
-````
 
 2. **Navigate to the project directory**:
    ```bash
@@ -40,6 +38,3 @@ To validate the functionality of the String Calculator, tests have been written 
 ```bash
 npm test
 ```
-
-Each test verifies specific requirements, ensuring the calculator behaves as expected according to the kata specifications.
-````
