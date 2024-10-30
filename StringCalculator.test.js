@@ -14,4 +14,8 @@ describe("StringCalculator", () => {
   test("should return the number when one number is provided", () => {
     expect(calculator.add("5")).toBe(5);
   });
+
+  test("should return the sum of two numbers separated by a comma", () => {
+    expect(calculator.add("1,2")).toBe(3);
+  });
 });
