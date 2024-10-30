@@ -1,8 +1,3 @@
-Here’s a single `README.md` file in markdown format that provides an overview of the project, setup instructions, and guidance for understanding the TDD approach and features.
-
----
-
-````markdown
 # String Calculator TDD Kata
 
 This repository contains a **String Calculator** project developed using **Test-Driven Development (TDD)** principles in **Node.js**. The purpose of this project is to implement a calculator that processes strings to sum numbers, following a structured development process where each functionality is added and verified through incremental tests.
@@ -26,6 +21,7 @@ Each feature was implemented incrementally following the TDD approach, with chan
    ```bash
    git clone https://github.com/yourusername/string-calculator-tdd-kata.git
    ```
+
 ````
 
 2. **Navigate to the project directory**:
@@ -46,3 +42,4 @@ npm test
 ```
 
 Each test verifies specific requirements, ensuring the calculator behaves as expected according to the kata specifications.
+````
