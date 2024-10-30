@@ -19,12 +19,12 @@ Each feature was implemented incrementally following the TDD approach, with chan
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/string-calculator-tdd-kata.git
+   git clone https://github.com/jscafe-dev/String-Calculator-TDD-Kata.git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-   cd string-calculator-tdd-kata
+   cd String-Calculator-TDD-Kata
    ```
 3. **Install dependencies**:
    ```bash
